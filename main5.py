@@ -22,7 +22,7 @@ if "thread_id" not in st.session_state:
 # Set up the Streamlit page with a title and icon
 st.set_page_config(page_title="ChatGPT-like Chat App", page_icon=":speech_balloon:")
 
-api_key = "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"
+api_key = ""
 if api_key:
     openai.api_key=api_key
 
