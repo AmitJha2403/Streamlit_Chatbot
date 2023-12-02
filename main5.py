@@ -2,6 +2,7 @@
 import openai
 import streamlit as st
 import time
+import os
 
 # Set your OpenAI Assistant ID here
 assistant_id = "asst_6R3527z7HlSOqs9iSSL0AgkQ"
@@ -22,7 +23,7 @@ if "thread_id" not in st.session_state:
 # Set up the Streamlit page with a title and icon
 st.set_page_config(page_title="ChatGPT-like Chat App", page_icon=":speech_balloon:")
 
-api_key = ""
+api_key = os.getenv("API_KEY")
 if api_key:
     openai.api_key=api_key
 
