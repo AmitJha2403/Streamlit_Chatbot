@@ -1,3 +1,4 @@
-streamlit
 openai
-TIME-python
+streamlit
+python-time
+python-dotenv
